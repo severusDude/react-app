@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
 import MainLayout from "./MainLayout";
 import Home from "./app/home/Home";
 import About from "./app/about/About";
