@@ -7,16 +7,14 @@ import About from "./app/about/About";
 function App() {
 	return (
 		<>
-			<SidebarProvider>
-				<Router>
-					<Routes>
-						<Route path="/" element={<MainLayout />}>
-							<Route index element={<Home />} />
-							<Route path="/about" element={<About />} />
-						</Route>
-					</Routes>
-				</Router>
-			</SidebarProvider>
+			<Router>
+				<Routes>
+					<Route path="/" element={<MainLayout />}>
+						<Route index element={<Home />} />
+						<Route path="/about" element={<About />} />
+					</Route>
+				</Routes>
+			</Router>
 		</>
 	);
 }
